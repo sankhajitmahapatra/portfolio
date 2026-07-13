@@ -1,0 +1,6 @@
+{
+  "name": "Ethan Mercer Portfolio",
+  "description": "A premium, editorial-style personal portfolio website for Ethan Mercer, a creative designer and brand strategist.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

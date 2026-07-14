@@ -102,7 +102,7 @@ export default function App() {
     return matchesSearch && matchesCategory;
   });
 
-  const indexCategories = ["ALL", "Brand Identity", "Creative Direction", "Editorial Design", "Digital Experience"];
+  const indexCategories = ["ALL", "Programming Languages", "Soft Skill", "Languages", "Digital Experience"];
 
   return (
     <div className="relative min-h-screen bg-primary-bg text-text-light selection:bg-accent-crimson selection:text-text-light font-sans overflow-hidden">
@@ -180,7 +180,7 @@ export default function App() {
               </div>
               <div className="hidden sm:block">
                 <span className="font-mono text-[9px] uppercase tracking-widest text-text-muted block">VERSION</span>
-                <span className="font-display text-xs text-text-light uppercase tracking-wider block mt-1">2026 EDITION</span>
+                <span className="font-display text-xs text-text-light uppercase tracking-wider block mt-1">LATEST EDITION</span>
               </div>
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function App() {
               
               {/* Tiny graphic labels inside the frame */}
               <div className="absolute bottom-4 left-4 font-mono text-[9px] text-text-light/80 tracking-widest uppercase bg-primary-bg/80 backdrop-blur-sm px-2.5 py-1 rounded-sm">
-                ë. mercer // model 01
+                Sankhajit Mahapatra // Profile Photo
               </div>
             </div>
 
@@ -249,8 +249,8 @@ export default function App() {
                   <span className="font-mono text-[9px] text-text-muted">© 2025</span>
                 </div>
                 <div className="z-10">
-                  <h4 className="font-display text-sm font-medium text-text-light uppercase tracking-wide">MNLTH SYSTEM</h4>
-                  <p className="text-[11px] text-text-muted font-mono mt-0.5 uppercase tracking-wide">Brutalist Geometry Guidelines</p>
+                  <h4 className="font-display text-sm font-medium text-text-light uppercase tracking-wide">JIS UNIVERSITY KOLKATA</h4>
+                  <p className="text-[11px] text-text-muted font-mono mt-0.5 uppercase tracking-wide">B.TECH IN COMPUTER SCIENCE & ENGINEERING</p>
                 </div>
               </div>
 
@@ -262,8 +262,8 @@ export default function App() {
                   <span className="font-mono text-[9px] text-text-muted">© 2025</span>
                 </div>
                 <div className="z-10">
-                  <h4 className="font-display text-sm font-medium text-text-light uppercase tracking-wide">AUREL PUBLICATION</h4>
-                  <p className="text-[11px] text-text-muted font-mono mt-0.5 uppercase tracking-wide">Italian Press Serif Layouts</p>
+                  <h4 className="font-display text-sm font-medium text-text-light uppercase tracking-wide">KHATRA HIGH SCHOOL</h4>
+                  <p className="text-[11px] text-text-muted font-mono mt-0.5 uppercase tracking-wide">HIGHER SECONDARY • SCIENCE STREAM</p>
                 </div>
               </div>
             </div>
@@ -273,7 +273,7 @@ export default function App() {
               <div className="absolute top-4 right-4 text-accent-sage/30">
                 <Sparkles className="w-6 h-6" />
               </div>
-              <h4 className="font-mono text-xs text-text-muted tracking-widest uppercase mb-3">OUR CORE CREED</h4>
+              <h4 className="font-mono text-xs text-text-muted tracking-widest uppercase mb-3">MY LEARNING PHILOSOPHY</h4>
               <p className="font-display text-base text-text-light leading-relaxed font-light">
                 “{PORTFOLIO_DATA.personal.philosophyStatement}”
               </p>
@@ -284,20 +284,20 @@ export default function App() {
           <div className="lg:col-span-5 flex flex-col gap-12 lg:sticky lg:top-32">
             <div>
               <h3 className="font-mono text-[10px] uppercase tracking-[0.25em] text-text-muted mb-4 pb-2 border-b border-border-dark/60">
-                CREATIVE EXPERTISE
+                TECHNICAL CORE EXPERTISE
               </h3>
               <p className="text-text-muted text-sm leading-relaxed mb-8">
-                Every project is rooted in deep strategy. I operate at the intersection of business intelligence, fine art direction, and meticulous spatial layouts to cultivate strong emotional resonances.
+                Every project I build is rooted in strong logical architecture. I operate at the intersection of core algorithms, functional software design, and modern frontend technologies to develop clean, optimized applications..
               </p>
               
               {/* Vertical list of core services */}
               <div className="flex flex-col border-t border-border-dark">
                 {[
-                  { num: "01", name: "BRAND STRATEGY", desc: "Isolating positioning, core messaging, and tone guidelines" },
-                  { num: "02", name: "ART DIRECTION", desc: "Crafting atmospheric campaigns, photoshoots, and lookbooks" },
-                  { num: "03", name: "VISUAL IDENTITY", desc: "Forging dynamic logo systems, Swiss typography grids, and color standards" },
-                  { num: "04", name: "DIGITAL EXPERIENCE", desc: "Coding custom, desaturated web interfaces with heavy attention to detail" },
-                  { num: "05", name: "PRODUCT STORYTELLING", desc: "Elevating luxury physical products into compelling tactile and virtual spaces" }
+                  { num: "01", name: "CORE PROGRAMMING", desc: "Writing structured logic in Python and mastering programming paradigms" },
+                  { num: "02", name: "ALGORITHMIC THINKING", desc: "Analyzing problems, designing efficient workflows, and optimizing execution complexity" },
+                  { num: "03", name: "DATA STRUCTURES", desc: "Organizing data efficiently to build robust backends and optimized system performance" },
+                  { num: "04", name: "WEB DEVELOPMENT", desc: "Building responsive, user-friendly frontend layouts using modern styling stacks" },
+                  { num: "05", name: "VERSION CONTROL", desc: "Managing codebase architectures efficiently using Git repositories and workflow environments" }
                 ].map((serv) => (
                   <div key={serv.num} className="group py-5 border-b border-border-dark flex items-start gap-4 hover:bg-secondary-bg/40 px-3 transition-colors duration-200">
                     <span className="font-mono text-xs text-accent-crimson font-medium">{serv.num}</span>
@@ -348,14 +348,14 @@ export default function App() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 pb-6 border-b border-border-dark">
             <div>
               <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent-crimson mb-3 block">
-                02 / FEATURED ARCHIVE
+                02 / ACADEMIC BACKGROUND
               </span>
               <h2 className="font-display font-medium text-3xl md:text-4xl uppercase tracking-tight text-text-light">
-                SELECTED WORK
+                EDUCATION
               </h2>
             </div>
             <p className="font-mono text-xs text-text-muted mt-4 md:mt-0 uppercase tracking-widest max-w-xs md:text-right">
-              Meticulously executed brand identities and sensory lookbooks.
+              Documenting my academic journey, technical skills, and projects in computer science.
             </p>
           </div>
 
@@ -432,15 +432,14 @@ export default function App() {
           {/* PROJECT INDEX TABLE - INTERACTIVE SEARCH & FILTERS */}
           <div className="border border-border-dark p-6 md:p-10 rounded-sm bg-secondary-bg/15 relative">
             <div className="absolute top-4 right-4 text-text-muted/10 font-mono text-[60px] font-bold select-none leading-none">
-              INDEX
             </div>
 
             <div className="mb-10">
               <h3 className="font-display text-lg uppercase tracking-wider text-text-light mb-2">
-                ADDITIONAL PROJECT INDEX
+                CORE SKILLS & TECHNOLOGIES
               </h3>
               <p className="text-xs text-text-muted font-mono uppercase tracking-widest mb-6">
-                A historical log of auxiliary branding campaigns, visual assets, and consultancies.
+                Core technologies, programming languages, and computer science concepts I am actively learning and building.
               </p>
 
               {/* Filter and Search Bar Grid */}
@@ -536,7 +535,7 @@ export default function App() {
       {/* ANGLED RIbbon / TYPOGRAPHY BAND 2 */}
       <div className="relative z-20 py-2 bg-primary-bg overflow-hidden">
         <Marquee
-          texts={["BUILDING SYSTEMS THAT ENDURE", "AURAL VANCE LOOKBOOK", "MNLTH IDENTITY", "AUREUS OBJECTS"]}
+          texts={["B.TECH IN COMPUTER SCIENCE", "SANKHAJIT MAHAPATRA", "CRAFTED WITH PASSION", "WELCOME TO MY PORTFOLIO"]}
           direction="right"
           rotate="rotate-1"
           bgClass="bg-[#0f0f0f] border-accent-sage/30"
@@ -559,7 +558,7 @@ export default function App() {
                 03 / THE METHODOLOGY
               </span>
               <h2 className="font-display font-medium text-3xl md:text-4xl uppercase tracking-tight text-text-light">
-                INSIDE THE CREATIVE PROCESS
+                Inside This Journey
               </h2>
             </div>
             <p className="font-mono text-xs text-text-muted mt-4 md:mt-0 uppercase tracking-widest max-w-xs md:text-right">
@@ -575,15 +574,15 @@ export default function App() {
                 {/* Secondary use of portrait in process as requested */}
                 <img
                   src={portraitUrl}
-                  alt="Ethan Mercer Process Guide"
+                  alt="Sankhajit Mahapatra Process Guide"
                   className="w-full h-full object-cover object-top grayscale brightness-75 scale-105 group-hover:scale-100 transition-transform duration-700 pointer-events-none"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary-bg via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
                   <div className="flex flex-col">
-                    <span className="font-mono text-[9px] text-accent-crimson tracking-widest uppercase">ETHAN MERCER</span>
-                    <span className="font-display text-xs text-text-light tracking-wide uppercase mt-0.5">STRATEGIC PRINCIPLE DIRECTOR</span>
+                    <span className="font-mono text-[9px] text-accent-crimson tracking-widest uppercase">SANKHAJIT MAHAPATRA</span>
+                    <span className="font-display text-xs text-text-light tracking-wide uppercase mt-0.5">SOFTWARE ENGINEER</span>
                   </div>
                   <span className="font-mono text-[10px] text-text-muted">GUIDE v1</span>
                 </div>
@@ -591,10 +590,10 @@ export default function App() {
 
               <div>
                 <h4 className="font-display text-sm font-medium text-text-light uppercase tracking-wide mb-3">
-                  A SPACE TO SHARE IDEAS, STRATEGIES, AND SPECIFIC OUTCOMES.
+                  MY METHODICAL APPROACH TO SOFTWARE DEVELOPMENT.
                 </h4>
                 <p className="text-xs text-text-muted leading-relaxed font-light">
-                  We maintain a rigorous standard of creative research. By operating inside a transparent loop of discovery and meticulous typography system deployment, we build distinct milestones that keep projects on schedule and within strategic bounds.
+                  I break down complex problems into modular, scalable code. By following systematic stages of logic building, structured programming, and optimization, I build robust backend logic and interactive frontend systems.
                 </p>
               </div>
             </div>
@@ -769,23 +768,23 @@ export default function App() {
               </a>
             </div>
 
-            {/* Scroll-To-Top button */}
-            <button
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="group bg-secondary-bg border border-border-dark/80 hover:border-text-light p-3 rounded-full text-text-muted hover:text-text-light transition-all focus:outline-none"
-              aria-label="Scroll to top"
-              id="scroll-to-top-btn"
-            >
-              <ArrowUp className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
-            </button>
-          </div>
+            {/* Scroll_To_Top button */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="group bg-secondary-bg border border-border-dark/80 hover:border-text-light p-3 rounded-full text-text-muted hover:text-text-light transition-all focus:outline-none"
+            aria-label="Scroll to top"
+            id="scroll-to-top-btn"
+          >
+            <ArrowUp className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
+          </button>
+        </div>
 
-          {/* Massive Low-Opacity Crop Background Text at the very bottom base of the section */}
-          <div className="w-full text-center mt-12 overflow-hidden select-none pointer-events-none h-20 md:h-32 xl:h-44 relative flex items-end justify-center">
-            <span className="font-display font-bold text-[8vw] leading-none uppercase text-[#121212]/30 tracking-widest whitespace-nowrap">
-              Sankhajit Mahapatra
-            </span>
-          </div>
+        {/* Massive Low-Opacity Crop Background Text at the very bottom base of the section */}
+        <div className="w-full text-center mt-12 overflow-hidden select-none pointer-events-none h-20 md:h-32 xl:h-44 relative flex items-end justify-center">
+          <span className="font-display font-bold text-[8vw] leading-none uppercase text-[#121212]/30 tracking-widest whitespace-nowrap">
+            Sankhajit Mahapatra
+          </span>
+        </div>
 
         </div>
       </section>

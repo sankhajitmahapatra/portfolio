@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-primary-bg: #080808;
+  --color-secondary-bg: #151515;
+  --color-text-light: #F2F0EA;
+  --color-text-muted: #9A9A96;
+  --color-border-dark: #303030;
+  --color-accent-sage: #64706C;
+  --color-accent-crimson: #A6453D;
+
+  --animate-scroll-left: scroll-left 40s linear infinite;
+  --animate-scroll-right: scroll-right 40s linear infinite;
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-grain: grain 8s steps(10) infinite;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
+/* Custom Base Styles */
+html {
+  scroll-behavior: smooth;
+  background-color: #080808;
+  color: #F2F0EA;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Subtle Film Grain Noise Overlay */
+.grain-overlay {
+  position: fixed;
+  top: -150%;
+  left: -150%;
+  right: -150%;
+  bottom: -150%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%), 
+              url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  animation: grain 8s steps(10) infinite;
+  pointer-events: none;
+  z-index: 99;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #303030;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64706C;
+}
+
+/* Smooth active highlight transitions */
+.nav-link-active {
+  color: #F2F0EA;
+}
+
+.nav-link-active::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #A6453D;
+  border-radius: 50%;
+  margin: 2px auto 0 auto;
+}
+
+/* Selection Styles */
+::selection {
+  background-color: #A6453D;
+  color: #F2F0EA;
+}
+

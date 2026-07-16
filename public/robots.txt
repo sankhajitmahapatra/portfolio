@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: https://portfolio-uud5.vercel.app
+Sitemap: https://portfolio-uud5.vercel.app/sitemap.xml
